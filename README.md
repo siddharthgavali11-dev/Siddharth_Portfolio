@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Siddharth Gavali — Portfolio
 
-## Getting Started
+A modern, animated personal portfolio built with Next.js, showcasing my projects, skills, education, and experience as a Computer Science and Business Systems student.
 
-First, run the development server:
+**Live site:** _add your deployed URL here once live_
+**Repository:** https://github.com/siddharthgavali11-dev/Siddharth_Portfolio
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## ✨ Features
+
+- **Smooth scrolling** experience powered by Lenis
+- **Animated sections** with scroll-triggered reveals (Framer Motion + Intersection Observer)
+- **Custom cursor** and particle background for a distinctive feel
+- **Command palette** (`Ctrl+K`) for quick in-page navigation
+- **Live GitHub stats** — pulls real-time repo count, stars, and followers from the GitHub API
+- **Dynamic stats counters** computed directly from resume data (projects, skills, experience)
+- **Fully responsive** — desktop, tablet, and mobile layouts
+- **Dark theme** with a neon cyan/purple accent system
+- **Interactive resume viewer** and downloadable CV
+- **Contact form** for direct outreach
+
+## 🛠️ Tech Stack
+
+| Category | Technologies |
+|---|---|
+| Framework | [Next.js 16](https://nextjs.org) (App Router, Turbopack), [React 19](https://react.dev) |
+| Language | [TypeScript](https://www.typescriptlang.org) |
+| Styling | [Tailwind CSS v4](https://tailwindcss.com) |
+| Animation | [Framer Motion](https://www.framer.com/motion/), [GSAP](https://gsap.com), [Lenis](https://lenis.darkroom.engineering) (smooth scroll) |
+| Icons | [Lucide React](https://lucide.dev) |
+| Scroll Detection | [react-intersection-observer](https://github.com/thebuilder/react-intersection-observer) |
+| Linting | ESLint 9 (flat config) |
+
+## 📂 Project Structure
+
+```
+portfolio/
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx          # Root layout, global providers
+│   │   ├── page.tsx            # Home page, section composition
+│   │   └── globals.css
+│   ├── components/
+│   │   ├── Navbar.tsx
+│   │   ├── Hero.tsx
+│   │   ├── About.tsx
+│   │   ├── Skills.tsx
+│   │   ├── Timeline.tsx        # Experience & Education
+│   │   ├── Projects.tsx
+│   │   ├── ProfilesAndAchievements.tsx
+│   │   ├── ResumeViewer.tsx
+│   │   ├── ContactForm.tsx
+│   │   ├── Footer.tsx
+│   │   ├── SmoothScroll.tsx
+│   │   ├── ParticleBackground.tsx
+│   │   ├── CustomCursor.tsx
+│   │   ├── CommandPalette.tsx
+│   │   └── AiAssistant.tsx
+│   └── utils/
+│       └── resumeData.ts       # Single source of truth for all content
+├── public/                     # Static assets (photo, resume PDF, etc.)
+├── next.config.ts
+├── tsconfig.json
+└── package.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prerequisites
+- Node.js 18.18 or later
+- npm (or yarn / pnpm / bun)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📬 Contact
 
-## Learn More
+- **Email:** siddharthgavali55@gmail.com
+- **LinkedIn:** [siddharth-gavali](https://linkedin.com/in/siddharth-gavali-84b68a2a6)
+- **GitHub:** [@siddharthgavali11-dev](https://github.com/siddharthgavali11-dev)
 
-To learn more about Next.js, take a look at the following resources:
+## 📄 License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is personal portfolio code. Feel free to reference the structure for your own portfolio, but please don't copy the content or design wholesale without permission.
