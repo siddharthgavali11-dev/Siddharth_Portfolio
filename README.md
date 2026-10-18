@@ -2,7 +2,7 @@
 
 A modern, animated personal portfolio built with Next.js, showcasing my projects, skills, education, and experience as a Computer Science and Business Systems student.
 
-**Live site:** _add your deployed URL here once live_
+**Live site:** [siddharth-portfolio-rho.vercel.app](https://siddharth-portfolio-rho.vercel.app)
 **Repository:** https://github.com/siddharthgavali11-dev/Siddharth_Portfolio
 
 ---
@@ -68,8 +68,31 @@ portfolio/
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js 18.18 or later
+- Node.js 20.9 or later (required by Next.js 16)
 - npm (or yarn / pnpm / bun)
+
+### Run locally
+
+```bash
+git clone https://github.com/siddharthgavali11-dev/Siddharth_Portfolio.git
+cd Siddharth_Portfolio
+npm install
+npm run dev
+```
+
+Open http://localhost:3000 in your browser.
+
+### Other scripts
+
+| Command | What it does |
+| --- | --- |
+| `npm run build` | Create a production build |
+| `npm start` | Serve the production build |
+| `npm run lint` | Run ESLint |
+
+### Updating the content
+
+All portfolio content (projects, skills, experience, education) comes from `src/utils/resumeData.ts`, so most edits happen in that one file.
 
 ## 📬 Contact
 
